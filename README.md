@@ -13,8 +13,8 @@
 <img width="600" alt="image" src="https://github.com/Qetesh/logi-options-plus-mini/assets/4559341/d4c503a9-51d8-4a18-af90-a3f3be508e8b">
 <img width="600" alt="image" src="https://github.com/Qetesh/logi-options-plus-mini/assets/4559341/14a85961-b022-4fc9-99bf-6e30b071f54c">
 <img width="600" alt="image" src="https://github.com/Qetesh/logi-options-plus-mini/assets/4559341/bf97e703-d5d5-43d6-9236-6e1d06b7c0c8">
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/66f8d2d7-5981-4085-9829-25c0189804a8">
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/d8918fd1-36f2-4933-9cc7-28471745139b">
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/3afb9d21-242e-436d-af78-9d386d83bac4">
+
 
 ## 项目简介
 
@@ -57,12 +57,10 @@
 1. 克隆此项目到本地
 
    ```bash
-   git clone https://github.com/Qetesh/logi-options-plus-mini.git
+   git clone https://github.com/tjsky/logi-options-plus-mini.git
    cd logi-options-plus-mini
    ```
 2. 运行Shell脚本（需要 `sudo`权限卸载旧版本）
-
-- macOS
 
   ```bash
   chmod u+x logi-options-plus-mini.command
@@ -89,36 +87,44 @@
 
   Enter your choices(e.g. 2 6, default is none): 
   ```
-- Windows ~~（需要管理员终端运行一次 `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`，具体见：[#5](https://github.com/Qetesh/logi-options-plus-mini/issues/5)）~~ 
+  
+### 使用 Windows Shell
 
-  ~~右键ps1脚本，`使用PowerShell运行`~~
+1. 克隆此项目到本地
 
-双击bat脚本 `Run_Install.bat`即可，(脚本会赋予一次临时的 ExecutionPolicy 权限)
+   ```bash
+   git clone https://github.com/tjsky/logi-options-plus-mini.git
+   cd logi-options-plus-mini
+   ```
+
+2. 双击bat脚本 `Run_Install.bat`即可，(脚本会赋予临时的 ExecutionPolicy 权限)
 
   ```powershell
-  ##############################################################
-  12/17/2024 19:50:23 | Starting install of Logi Options+
-  ##############################################################
-  12/17/2024 19:50:24 | Downloading Logi Options+ Installer...
-  12/17/2024 19:51:06 | Download completed successfully.
-  12/17/2024 19:51:06 | Uninstalling existing version of Logi Options+...
+##############################################################
+01/09/2026 10:48:24 | 开始安装 Logi Options+
+##############################################################
 
-  Please select the features you want to keep:
-  1. analytics:             Shows or hides choice for users to opt in to share app usage and diagnostics data.
-  2. flow:                  Shows or hides the Flow feature. Default value is Yes
-  3. sso:                   Shows or hides ability for users to sign into the app.
-  4. update:                Enables or disables app updates.
-  5. dfu:                   Enables or disables device firmware updates.
-  6. backlight:             Enables or disables keyboard backlight on the supported keyboards.
-  7. logivoice:             Enables or disables LogiVoice feature.
-  8. aipromptbuilder:       Enables or disables AI Prompt Builder feature.
-  9. device-recommendation: Enables or disables device recommendation feature.
-  10. smartactions:         Enables or disables Smart Actions feature.
-  11. actions-ring:         Enables or disables Actions Ring feature.
-  12. all
-  Press enter for none
+01/09/2026 10:48:24 | 检测到您位于中国地区，使用 CN 下载源
+01/09/2026 10:48:24 | 正在下载安装包: https://download.logitech.com.cn/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.exe
+01/09/2026 10:49:05 | 下载成功。
 
-  Enter your choices(e.g. 2 6, default is none):
+请选择你想保留/开启的功能：
+0.  quiet:               静默安装（无人值守安装）
+1.  analytics:           允许收集个人使用数据和诊断信息
+2.  flow:                Flow 跨屏功能 (默认为 Yes)
+3.  sso:                 启用 罗技账户 登录模块
+4.  update:              启用 Logi Options+ 自动更新
+5.  dfu:                 启用 设备固件 自动更新
+6.  backlight:           启用 键盘背光 支持
+7.  logivoice:           启用 罗技语音功能（LogiVoice）
+8.  aipromptbuilder:     启用 AI 功能
+9.  device-recommendation: 启用 新产品推荐（新产品广告）
+10. smartactions:        启用 Smart Actions (按键宏)
+11. actions-ring:        启用 Actions Ring（快捷启动）
+12. all (全部开启)
+直接按回车键，则执行最小化精简安装，不开启任何额外功能
+
+如需自定义请输入选项 (例如 '0 2 6 10', 默认为 最小化精简安装): 0 5 6 10
 
   ```
 
@@ -134,11 +140,18 @@
 
 - 部分Mac无法使用官方方式卸载，需使用第三方工具卸载后重新运行。已测试使用 `Pearcleaner`卸载后可正常运行安装
 
-### Contributors
+## 致谢 / 说明
+- 本项目基于 [Qetesh](https://github.com/Qetesh) 的 [logi-options-plus-mini](https://github.com/Qetesh/logi-options-plus-mini) 修改开发。 感谢原作者的开源贡献。
+- 分叉信息：由 [tjsky](https://github.com/tjsky) 分叉并修改：
+ 1. 添加windows系统下bat一键运行。
+ 2. 自动判断用户区域切换语言。
+ 3. 我没有mac打包环境，所以提供 macOS 原生应用为原作者的版本。
 
-<a href="https://github.com/Qetesh/logi-options-plus-mini/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Qetesh/logi-options-plus-mini" />
+### Contributors
+<a href="https://github.com/tjsky/logi-options-plus-mini/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=tjsky/logi-options-plus-mini" />
 </a>
+
 
 ## 贡献
 
@@ -149,6 +162,7 @@
 3. 提交您的更改 (`git commit -m 'Add some AmazingFeature'`)
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
 5. 打开一个Pull Request
+
 
 ## 许可证
 
