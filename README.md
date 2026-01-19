@@ -7,14 +7,14 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/11adddd4-bf0e-4e6d-b164-483b2521e228">
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/86024914-4650-4966-ba81-77d59fee5696">
-  <img alt="Logi Options+ mini" src="https://github.com/user-attachments/assets/86024914-4650-4966-ba81-77d59fee5696" width="600" > 
+  <img alt="Logi Options+ mini" src="https://github.com/user-attachments/assets/86024914-4650-4966-ba81-77d59fee5696" width="800" > 
 </picture>
 
-<img width="600" alt="image" src="https://github.com/Qetesh/logi-options-plus-mini/assets/4559341/d4c503a9-51d8-4a18-af90-a3f3be508e8b">
-<img width="600" alt="image" src="https://github.com/Qetesh/logi-options-plus-mini/assets/4559341/14a85961-b022-4fc9-99bf-6e30b071f54c">
-<img width="600" alt="image" src="https://github.com/Qetesh/logi-options-plus-mini/assets/4559341/bf97e703-d5d5-43d6-9236-6e1d06b7c0c8">
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/66f8d2d7-5981-4085-9829-25c0189804a8">
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/3afb9d21-242e-436d-af78-9d386d83bac4">
+<img width="800" alt="image" src="https://github.com/Qetesh/logi-options-plus-mini/assets/4559341/d4c503a9-51d8-4a18-af90-a3f3be508e8b">
+<img width="800" alt="image" src="https://github.com/Qetesh/logi-options-plus-mini/assets/4559341/14a85961-b022-4fc9-99bf-6e30b071f54c">
+<img width="800" alt="image" src="https://github.com/Qetesh/logi-options-plus-mini/assets/4559341/bf97e703-d5d5-43d6-9236-6e1d06b7c0c8">
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/66f8d2d7-5981-4085-9829-25c0189804a8">
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/3afb9d21-242e-436d-af78-9d386d83bac4">
 
 
 ## 项目简介
@@ -99,7 +99,7 @@
 
    如果你不会git或者你不知道怎么给git设置代理（虽然我感觉不至于，你都来github了……）你可以在网页里下ZIP包，解压后使用
    如果还嫌麻烦可以从这里下只有脚本的：[蓝奏云](https://tjsky.lanzouq.com/i5Vrp3fzq9dc)
-<img width="600" height="332" alt="image" src="https://github.com/user-attachments/assets/ddd0f2a3-5fd1-4b8c-a43e-5867b8c18629" />
+<img width="800" height="332" alt="image" src="https://github.com/user-attachments/assets/ddd0f2a3-5fd1-4b8c-a43e-5867b8c18629" />
    
 
 3. 双击bat脚本 `Run_Install.bat`即可，(脚本会赋予临时的 ExecutionPolicy 权限)
@@ -152,9 +152,15 @@
  2. 自动判断用户区域切换语言。
  3. 我没有mac打包环境，所以提供 macOS 原生应用为原作者的版本。
 
-### Contributors
+### 贡献者
 <a href="https://github.com/tjsky/logi-options-plus-mini/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=tjsky/logi-options-plus-mini" />
+</a>
+
+
+### Stars历史
+<a href="https://starchart.cc/tjsky/logi-options-plus-mini">
+  <img width="800" alt="Stargazers over time"  src="https://starchart.cc/tjsky/logi-options-plus-mini.svg?variant=adaptive" />
 </a>
 
 
